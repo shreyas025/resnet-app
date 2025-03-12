@@ -17,7 +17,8 @@ if uploaded_file is not None:
     # Send the image to the Flask server
     files = {"file": uploaded_file.getvalue()}
     response = requests.post(
-        "https://resnet-app.onrender.com/predict",
+        # "https://resnet-app.onrender.com/predict",
+        "http://localhost:8000/predict",
         files=files,
         auth=("admin", "password")
     )
