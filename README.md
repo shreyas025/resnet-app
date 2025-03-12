@@ -105,7 +105,7 @@ The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes (e.g., 
    ```bash
    curl.exe -X POST -u admin:password -F "file=@path/to/image.jpg" http://localhost:8000/predict
    
-Streamlit Frontend
+### Streamlit Frontend
 
 - Open the streamlit app by running the script streamlit_app.py
 - Upload an image using the file uploader.
