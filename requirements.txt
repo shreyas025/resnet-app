@@ -1,0 +1,9 @@
+flask
+flask_httpauth
+werkzeug
+tensorflow
+pillow
+numpy
+logging
+gunicorn
+requests
