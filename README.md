@@ -11,7 +11,6 @@ This project implements an image classification system for the CIFAR-10 dataset 
 3. [Setup Instructions](#setup-instructions)
    - [Prerequisites](#prerequisites)
    - [Local Setup](#local-setup)
-   - [Docker Setup](#docker-setup)
 4. [Usage](#usage)
    - [Flask API](#flask-api)
    - [Streamlit Frontend](#streamlit-frontend)
