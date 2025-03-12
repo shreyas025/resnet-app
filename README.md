@@ -16,9 +16,6 @@ This project implements an image classification system for the CIFAR-10 dataset 
    - [Flask API](#flask-api)
    - [Streamlit Frontend](#streamlit-frontend)
 5. [Deployment](#deployment)
-6. [Repository Structure](#repository-structure)
-7. [Contributing](#contributing)
-8. [License](#license)
 
 ---
 
@@ -99,14 +96,22 @@ The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes (e.g., 
 
 ### Flask API
 
-**Endpoint**: /predict
-**Method**: POST
-**Authentication**: Basic Auth (username: admin, password: password)
-**Input**: Image file
-**Output**: Predicted Class
+- **Endpoint**: /predict
+- **Method**: POST
+- **Authentication**: Basic Auth (username: admin, password: password)
+- **Input**: Image file
+- **Output**: Predicted Class
 
-4. Run the Streamlit app:
+5. Example using CURL
    ```bash
-   curl -X POST -u admin:password -F "file=@path/to/image.jpg" http://localhost:8000/predict
+   curl.exe -X POST -u admin:password -F "file=@path/to/image.jpg" http://localhost:8000/predict
    
 Streamlit Frontend
+
+- Open the streamlit app by running the script streamlit_app.py
+- Upload an image using the file uploader.
+- View the predicted class.
+
+## Deployment
+
+- The api is deployed on render (free api service). However the inference is unable to produce results as our current tensorflow model cannot load as it exceeds the permisible size.
